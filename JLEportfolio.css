@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    body: 0;
+    height: 100%;
+  }
+  
+  #header {
+      padding: 60px;
+      text-align: left;
+      background: #222E50;
+      color: white;
+      font-size: 30px;
+    }
+  
+  #footer {
+      width: 100%;
+      background-color: #222E50;
+      color: white;
+      text-align: left;
+      padding: 10px;
+    }
+  
+  h1 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+    }
+  
+  h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+    }
+   
+  h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  
+  p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+    }
+  
+  a:link {
+      color: black;
+    }
+  
+  a:visited {
+      color: black;
+  }
+  
+  a:hover {
+      background-color: #78D5D7;
+    }
+  
+  strong {  /* offset highlight */
+      position: relative;
+      font-weight: bold;
+    }
+    
+  strong::before {  /* offset highlight */
+      background-color: #EAD94C;
+      content: "";
+      position: absolute;
+      width: calc(100% + 4px);
+      height: 60%;
+      left: -2px;
+      bottom: 0;
+      z-index: -1;
+    }
+  
+  hr.dotted {
+      border-top: 1px dashed #222E50;
+    }
