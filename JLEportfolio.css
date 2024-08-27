@@ -50,10 +50,27 @@ a:visited {
   color: black;
 }
 
+strong-link {  /* offset highlight */
+  position: relative;
+  font-weight: bold;
+}
+  
+strong-link::before {  /* offset highlight */
+  background-color: #78D5D7;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+}
+
+/*
 a:hover {
   background-color: #78D5D7;
 }
-
+*/
 strong {  /* offset highlight */
   position: relative;
   font-weight: bold;
